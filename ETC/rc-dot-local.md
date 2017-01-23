@@ -1,6 +1,7 @@
 # /etc/rc.local
 
 ##startup.sh Example
+'''shell
 
 #!/bin/bash
 
