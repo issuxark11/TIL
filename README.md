@@ -1,6 +1,7 @@
 # Today I Learned
 
-Referece [thoughtbout til](https://github.com/thoughbot/til)
+* Reference [milooy TIL](https://github.com/milooy/TIL)
+* Reference [thoughtbout til](https://github.com/thoughbot/til)
 
 ## Rules
-- [GRM (Github Flavored Markdown)]
+- [GFM (Github Flavored Markdown)]
