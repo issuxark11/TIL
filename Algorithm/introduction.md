@@ -51,5 +51,4 @@ Computer 가 풀 수 있는 알고리즘 = "Unambiguous" algorithm
 3. (Asymptotic Notations)
    Big O notation defines an upper bound of an algorithm
 4. (Analysis Of Loops)
-   * [geeksforgeeks-quiz](http://quiz.geeksforgeeks.org/algorithms/analysis-of-algorithms/)
-5. 
+   [geeksforgeeks-quiz](http://quiz.geeksforgeeks.org/algorithms/analysis-of-algorithms/)
