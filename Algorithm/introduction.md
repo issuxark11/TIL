@@ -44,3 +44,11 @@ Computer 가 풀 수 있는 알고리즘 = "Unambiguous" algorithm
 5. 프로그램으로 구현한다.
 6. 어떻게 풀었는지 돌아보고, 개선할 방법이 있는지 찾아본다.
 ```
+
+## Analysis Of Algorithm
+1. (Asymptotic Analysis) 점근선
+2. (Worst, Average and Best Cases)
+3. (Asymptotic Notations)
+   Big O notation defines an upper bound of an algorithm
+4. (Analysis Of Loops)
+   [geeksforgeeks-quiz](http://quiz.geeksforgeeks.org/algorithms/analysis-of-algorithms/)
