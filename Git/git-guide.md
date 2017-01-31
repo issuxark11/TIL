@@ -42,11 +42,12 @@ git log -p <file name>
 
 git rebase -i HEAD~2
 # 가리고 싶은 commit을 'fixup'으로 고치고 저장
-# 주의해서 사용(branch 생김...)
+# 이미 push 한 commit 은 건들지 않는다. 주의해서 사용 (branch 생김...)
+
 ```
 
 ## Commit message
-shell```
+```shell
 커밋 내용 한 줄 요약
 공백 한줄 
 [Module] 모듈명
