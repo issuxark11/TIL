@@ -1,7 +1,4 @@
 # Algorithm - Introduction
-## Reference
-* Introduction of the Design & Analysis of Algorithms (Anany Levitin)
-* 알고리즘 문제 해결 전략 (구종만) / 인사이트
 
 ## Why study Algorithm?
 ```shell
@@ -52,3 +49,8 @@ Computer 가 풀 수 있는 알고리즘 = "Unambiguous" algorithm
    Big O notation defines an upper bound of an algorithm
 4. (Analysis Of Loops)
    [geeksforgeeks-quiz](http://quiz.geeksforgeeks.org/algorithms/analysis-of-algorithms/)
+
+## Reference
+* Introduction of the Design & Analysis of Algorithms (Anany Levitin)
+* 알고리즘 문제 해결 전략 (구종만) / 인사이트
+* [geeksforgeeks](http://www.geeksforgeeks.org/fundamentals-of-algorithms/)

@@ -1,5 +1,7 @@
-# Dynamic Programming
-* Use when sub-problems are evaluated many times (e.g 점화식) 
+# Algorithm - Dynamic Programming Introduction
+
+## Introduction
+* Use when sub-problems are evaluated many times (e.g 점화식)
 * Solving complex problem by breaking it into subproblems and stores the results of subproblems to avoid computing the same results again.
 
 ## Properties
@@ -16,3 +18,6 @@ results of subproblems are stored in a table
      Builds a table in bottom up fashion and returns the last entry from table
 ```
 2. Optimal Substructure
+
+## Reference
+* [geeksforgeeks](http://www.geeksforgeeks.org/fundamentals-of-algorithms/)
