@@ -1,14 +1,18 @@
 # Data Structure - Graph
 
-## 그래프
+## Graph
 - 객체들의 상호 관계를 표현하기 위한 자료 구조
 - 현실 세계의 사물이나 추상적인 개념 간의 연결 관계를 표현
-
-## 그래프의 구성 요소
-- 그래프 G(V,E)
 - 그래프는는 어떤 자료나 개념을 표현하는 Vertex 들의 집합 V와 이들을 연결하는 edge 들의 집합 E로 구성되어 있는 자료 구조
 
-## 그래프의 종료
+## Components
+- 그래프 G(V,E)
+- V : A finite set of vertices also called as nodes
+- E : A finite set of ordered pair of the form (u, v) called as edge. The edges may contain weight/value/cost
+- (u, v) indicated that there is an edge from vertex u to vertex v
+
+
+## 그래프의 종류
 - directed graph
 - undirected graph
 - weighted graph : edge에 가중치 속성을 부여
@@ -38,8 +42,10 @@ typedef struct _edge {
 ```shell
 vector<vector<bool>> adjacent;  // adjacent[i][j] : V[i] V[j] 간의 edge가 존재하는지 여부
 ```
-- sparse graph
+- 장점 : O(1) 시간에 edge의 추가 삭제 가능
+- 단점 : O(V^2) 만큼의 메모리 공간을 소모. Sparse graph의 경우에도 같은 크기 만큼의 공간을 차지 
 
 ## Reference
 * 열혈강의 자료구조 / 윤성우 저
 * 알고리즘 문제해결 전략 / 구종만 저
+* [geeksforgeeks](http://www.geeksforgeeks.org/graph-and-its-representations/)
