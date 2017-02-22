@@ -12,9 +12,10 @@
 - scheduling : context switching 이 일어나는 시점 결정
 - synchronization : concurrency 한 context들이 공유자원을 균등하게 사용할 수 있는 방법을 제공
 
-##Thread
+##Thread Vs Process
 - 쓰레드 간 코드, 데이터, 스택 등 주소공간 공유
 - 프로세스간 switch 에 비해 가벼움
+- 프로세스는 서로 독립된 가상 메모리 주소 공간을 가지지만 한 프로세스 내에서 동작하는 쓰레드들은 동일한 공유 메모리 주소 공간과 모든 프로세스 데이터를 공유
 
 ##Reference
 - POSIX Thread를 이용한 프로그래밍 / 인포북
