@@ -1,50 +1,56 @@
 ## git guide
-```shell
-git install
-# sudo apt-get install git
 
-git configuration
-~/.gitconfig
-# git config --global user.name "id"
-# git config --global user.email "email@gmail.com"
-# git config --global color.ui "auto"
-# git config --list
+### git install
+- sudo apt-get install git
 
-git init
-# start version control. initialize repository. create '.git' 
+### git configuration
+- ~/.gitconfig
+- # git config --global user.name "id"
+- # git config --global user.email "email@gmail.com"
+- # git config --global color.ui "auto"
+- # git config --list
 
-git clone "사용자명@호스트://원격/저장소/경로"
-# clone remote repository
-# git clone "https://github.com/issuxark11/TIL"
+### 버전 관리 시작 (저장소 생성) 
+- start version control. initialize repository. create '.git' 
+- # git init
 
-work flow
-# Working directory(작업 디렉토리) - 실행파일들로 구성
-# Index - Staging area (커밋 전 임시 영역)
-# HEAD - commit (최종 확정본)
+### 버전 저장소 복제
+- clone remote repository
+- # git clone "사용자명@호스트://원격/저장소/경로"
+- # git clone "https://github.com/issuxark11/TIL"
 
-git add <file name>
-# add modified files to Index - 스테이지 영역에 파일 추가
+### work flow
+- Working directory(작업 디렉토리) - 실행파일들로 구성
+- Index - Staging area (커밋 전 임시 영역)
+- HEAD - commit (최종 확정본)
 
-git commit -m "commit message"
-# commit modified files to HEAD - 실제 repository 변경 내역에 반영
+### 버전 관리 대상 지정 
+- add modified files to Index - 스테이지 영역에 파일 추가
+- # git add <file name>
 
-git push origin master
-# upload HEAD to remote repository - 원격 저장소에 반영
+### Commit
+- commit modified files to HEAD - 실제 repository 변경 내역에 반영
+- 버전관리 되고 있는 파일 중 변경된 파일이 있다면 변경된 내용들을 저장소에 저장
+- 이력을 남겨 어떤 작업을 했는지 기록
+- # git commit -m "commit message"
 
-git status
-# check version control state
+### 원격 저장소에 반영 
+- upload HEAD to remote repository
+- # git push origin master
 
-git log
-# repository에 commit 된 log 확인
+### 버전 관리 상태 체크
+- check version control state
+- # git status
 
-git log -p <file name>
-# commit에서 변경된 내용 함께 확인
+### 작업 이력 
+- repository에 commit 된 log 확인
+- # git log
+- # git log -p <file name> : commit에서 변경된 내용 함께 확인
 
-git rebase -i HEAD~2
-# 가리고 싶은 commit을 'fixup'으로 고치고 저장
-# 이미 push 한 commit 은 건들지 않는다. 주의해서 사용 (branch 생김...)
-
-```
+### rebase
+- 가리고 싶은 commit을 'fixup'으로 고치고 저장
+- 이미 push 한 commit 은 건들지 않는다. 주의해서 사용 (branch 생김...)
+- # git rebase -i HEAD~2
 
 ## Commit message
 ```shell
