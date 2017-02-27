@@ -5,8 +5,18 @@
 ### 클래스(Class)
 - ADT (Abstract Data Type) : 사용자 정의 data type    
 - reference data type : 기존 data type(primitive data type)을 이용 새로운 data type 생성
-- 객체 모델링의 수단
+- 객체 모델링의 수단 : 현실세계의 객체를 프로그램 적으로 묘사
 - 객체를 만들기 위한 기본 단위
+- 상태(member variable)와 행위(method)로 표현 
+```shell
+ex) 자동차
+   - 상태값 ( 색상, 문짝수,  가격, 배기량, 모델, 최고속도 등)
+   -> 변수로 표현 가능
+   - 행위 ( 전진, 후진, 와이퍼를 움직인다, 방향 지시등을 켠다, 주유한다 등)
+   -> 함수로 표현 가능 
+    행위가 상태값에 영향을 미치는 경우가 대부분임
+    class는 객체 모델링의 수단
+```
 
 ### 객체지향 언어
 ```shell
