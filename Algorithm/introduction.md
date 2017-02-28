@@ -50,7 +50,11 @@ Computer 가 풀 수 있는 알고리즘 = "Unambiguous" algorithm
 4. (Analysis Of Loops)
    [geeksforgeeks-quiz](http://quiz.geeksforgeeks.org/algorithms/analysis-of-algorithms/)
 
+## 알고리즘 설계 패러다임
+- 주어진 문제를 해결하기 위해 알고리즘이 채택한 전략이나 관점
+- Brute Force
+
 ## Reference
-* Introduction of the Design & Analysis of Algorithms (Anany Levitin)
-* 알고리즘 문제 해결 전략 (구종만) / 인사이트
-* [geeksforgeeks](http://www.geeksforgeeks.org/fundamentals-of-algorithms/)
+- Introduction of the Design & Analysis of Algorithms (Anany Levitin)
+- 알고리즘 문제 해결 전략 (구종만) / 인사이트
+- [geeksforgeeks](http://www.geeksforgeeks.org/fundamentals-of-algorithms/)
