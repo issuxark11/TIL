@@ -6,8 +6,10 @@
 ## 1. Naive Pattern Searching
 - O(m(n-m+1))
 ```shell
-void Search(char * text, char * pattern)
-	
+/* Given a text[0.. n-1] and a pattern[0.. m-1], assume n > m*/
+/* prints all occurrences of pattern[] in text[] */ 
+void Search(char * text, char * pattern)  
+
 for (int i = 0; i <= N - M; i++)
 {
         int j;
