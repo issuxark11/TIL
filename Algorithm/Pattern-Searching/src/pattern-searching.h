@@ -1,9 +1,23 @@
+#ifndef PATTERN_SEARCHING_H
+#define PATTERN_SEARCHING_H
+
 #include <iostream>
 
 using namespace std;
 
+class CPatternSearching
+{
+public:
+	CPatternSearching(){};
+	~CPatternSearching(){};
+
+	/* naive pattern searching (exhaustive search) */
+	void PatternMatchingNaive(string &text, string& pattern);
+
+};
+
 /* naive pattern searching (exhaustive search) */
-void PatternMatchingNaive(string &text, string& pattern)
+void CPatternSearching::PatternMatchingNaive(string &text, string& pattern)
 {
     int m = static_cast<int>(pattern.size());
 	int n = static_cast<int>(text.size());
@@ -24,3 +38,5 @@ void PatternMatchingNaive(string &text, string& pattern)
 		}
 	}
 }
+
+#endif
