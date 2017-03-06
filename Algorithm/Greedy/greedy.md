@@ -1,5 +1,6 @@
-# Algorithm - Greedy Approach Introduction
+# Algorithm - Greedy Approach 
 
+## Introduction
 - 각 단계마다 지금 당장 가장 좋은 방법만을 선택
 - Choose the next piece that offers the most obvious and immediate benefit
 - 지금의 선택이 남은 선택들에 어떤 영향을 끼칠지는 고려하지 않음
@@ -11,14 +12,11 @@
 ```	
 - 탐욕적 알고리즘 연습 문제를 풀 때는 알고리즘의 정당성을 증명하는 과정을 빼먹지 않고 연습!!
 
-```shell
-#Example
-회의실 예약 : 겹치지 않는 회의들만을 골라 내 진행. 최대 몇 개나 선택 가능할까?
-길이와 관계없이 가장 먼저 끝나는 회의부터 선택 / 가장 먼저 끝나는 회의를 선택 후 겹치는 것들은 지움
-	1. 목록 S 에 남은 회의 중 가장 일찍 끝나는 회의 S_min 을 선택
-	2. S_min 과 겹치는 회의를 S에서 모두 지운다
-	3. S가 빌 때까지 반복
-```
+## Greedy Algorithm Examples
+- Kruskal's Minimum Spanning Tree (MST)
+- Prim's Minimun Spanning Tree
+- Dijkstra's Shortest Path
+- Huffman Coding
 
 ## Reference
 * [geeksforgeeks](http://www.geeksforgeeks.org/fundamentals-of-algorithms/)
