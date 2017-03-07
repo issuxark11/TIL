@@ -26,13 +26,13 @@ void PrintMaximumActivity(int N, activity * i_arrActivityTime)
     
     for(int i=1; i < N; i++)
     {
-        if(i_arrActivityTime[i].iStartTime > iDueTime )
+        if(i_arrActivityTime[i].iStartTime >= iDueTime )
         {
             iMaxCount++;
             iDueTime = i_arrActivityTime[i].iFinishTime;
         }
     }
-    cout << iMaxCount;
+    cout << iMaxCount << endl;
 }
 
 int main() {
@@ -59,5 +59,11 @@ int main() {
 	    PrintMaximumActivity(N, arrActivityTime);
 	}
 	
+	/* 
+	T = 1;
+	N = 8;
+	17 91   41 80   36 7    73 99
+	33 101 66 104 56 28 99 106 
+	*/
 	return 0;
 }

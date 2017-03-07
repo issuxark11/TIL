@@ -7,8 +7,12 @@ You are given n activities with their start and finish times. Select the maximum
 # Solution
 1. 종료 시간 순으로 Activity Sorting
 2. Sorting 후 첫번째 Activity 출력
-3. 겹치는 Activity 제거 후 첫번째 Activity 출력
+3. 겹치는 Activity 제거 후 종료시간 순으로 첫번째 Activity 출력
 4. 반복
+
+# Time Complexity
+Activity 가 sorting 되어 있는 경우 O(n)
+sorting 해야 하는 경우 O(nlogn)
 ```
 
 ```shell
