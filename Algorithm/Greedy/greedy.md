@@ -4,6 +4,7 @@
 - 각 단계마다 지금 당장 가장 좋은 방법만을 선택
 - Choose the next piece that offers the most obvious and immediate benefit
 - 지금의 선택이 남은 선택들에 어떤 영향을 끼칠지는 고려하지 않음
+- 항상 최적해를 구할 수 있음은 보장하지 못함 
 ```shell
 	1. 탐욕법을 사용해도 항상 최적해를 구할 수 있는 문제  (used for optimization problem)
 	Optimization problem can be solved using Greedy if the problem has the following property : 
@@ -17,6 +18,10 @@
 - Prim's Minimun Spanning Tree
 - Dijkstra's Shortest Path
 - Huffman Coding
+
+## Dynamic Pr:ogramming VS Greedy
+- dp : 모든 상황을 고려. 시간상 오래걸림
+- greedy : 항상 최적해를 보장하지 않음. 시간적 효율성
 
 ## Reference
 * [geeksforgeeks](http://www.geeksforgeeks.org/fundamentals-of-algorithms/)
