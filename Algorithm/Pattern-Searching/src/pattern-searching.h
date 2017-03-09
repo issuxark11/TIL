@@ -33,7 +33,8 @@ void CPatternSearching::PatternMatchingNaive(string &text, string& pattern)
 			}
 			
 			if(j == m-1)
-			{														    	cout << "Pattern found at index " << i << endl;
+			{														    	
+				cout << "Pattern found at index " << i << endl;
 			}
 		}
 	}
