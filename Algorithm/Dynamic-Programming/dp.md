@@ -5,6 +5,7 @@
 - Solving complex problem by breaking it into subproblems and stores the results of subproblems to avoid computing the same results again.
 - 중복되는 함수 호출을 줄임 
 - 점화식, BackTracking 알고리즘 사용시 불필요한 중복 계산을 줄일 수 있음 -> 최적화 가능
+- Base Condition이 중요!
 
 ## Properties
 ### 1. Overapping Subproblems
@@ -68,7 +69,7 @@ int fibbo(int n)
 - A given problems has Optimal Substructure Property if optimal solution of the given problem can be obtained by using optimal solutions of its subproblems
 - divide all set solutions in n sets  ex) 동전 Sn 을 포함하는 경우와 포함하지 않는 경우로 나눔
 
-## Dynamic Pr:ogramming VS Greedy
+## Dynamic Programming VS Greedy
 - dp : 모든 상황을 고려. 시간상 오래걸림
 - greedy : 항상 최적해를 보장하지 않음. 시간적 효율성
 
