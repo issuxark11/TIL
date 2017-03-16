@@ -1,12 +1,16 @@
 #include <iostream>
+#include <algorithm>
+#include <vector>
 
 using namespace std;
+
+vector<string> vec;
 
 void Permutation(string& i_str, int i_iStartIdx, int i_iEndIdx) 
 {
     if(i_iStartIdx == i_iEndIdx)
     {
-        cout << i_str << " ";
+        vec.push_back(i_str);
     }
     else
     {
@@ -19,6 +23,18 @@ void Permutation(string& i_str, int i_iStartIdx, int i_iEndIdx)
     }
 }
 
+void PermutationLexicographical(string& i_str)
+{
+    vec.clear();
+	Permutation(i_str, 0, i_str.size()-1);
+    
+    sort(vec.begin(), vec.end());
+	for(vector<string>::iterator it = vec.begin(); it != vec.end(); it++)
+	{
+	    cout << *it << " ";
+	}
+}
+
 int main() {
 	//code
 	int T;
@@ -29,7 +45,7 @@ int main() {
 	while(T-- >0)
 	{
 	    cin >> str;
-	    Permutation(str, 0, str.size()-1);
+	    PermutationLexicographical(str);
 	    cout << endl;
 	}
 	return 0;
