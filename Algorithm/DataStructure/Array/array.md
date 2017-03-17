@@ -7,12 +7,15 @@
 - This makes it easier to calculate the position of each element by simply adding an offset to a base value, i.e., 
  the memory location of the first element of the array
 ```
-## Advantage
-- arry elements 들에 대해 random access 허용. 원소들에 빠르게 접근 가능해짐 
+## Advantage of array
+- array elements 들에 대해 random access 허용. 원소들에 빠르게 접근 가능해짐 
 - Arrays have better cache locality that can make a pretty big difference in performance.
 
 ### cache locality
 
+## Drawbacks of array
+- Size of array is fixed. Be careful buffer overflow
+- Inserting a new element in an array of elements is expensive
 
 ## Properties
 - In C, it is possible to have array of all types except void and functions
