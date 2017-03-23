@@ -11,5 +11,45 @@
 - Stable: Yes
 ```
 
+### Implementation
+```shell
+void BubbleSort(int arr[], int n)
+{
+	for(int i = 0; i < n-1; i++)
+	{
+    for(int j = i+1; j < n - 1; j++)
+		{
+      if(arr[j] > arr[j+1])  
+      {
+        swap(arr[j], arr[j+1]);
+      }
+    }
+	}
+}
+```
+
+### Optimized Implementation
+```shell
+void BubbleSortOptimized(int arr[], int n)
+{
+  bool bSwaped = false;
+
+  for(int i = 0; i < n-1; i++)
+  {
+    for(int j = i+1; j < n - 1; j++)
+    {
+      if(arr[j] > arr[j+1])  
+      {
+        swap(arr[j], arr[j+1]);
+        bSwaped = true;
+      }
+    }
+
+    if(bSwaped == false)
+      break;
+  }
+}
+```
+
 ## Reference
 * [geeksforgeeks](http://quiz.geeksforgeeks.org/bubble-sort/)
