@@ -15,16 +15,17 @@
 ```shell
 void BubbleSort(int arr[], int n)
 {
-	for(int i = 0; i < n-1; i++)
-	{
-    for(int j = i+1; j < n - 1; j++)
-		{
+  for(int i = 0; i < n-1; i++)
+  {
+    // Last i Elements are already in place
+    for(int j = 0; j < n - i - 1; j++)
+    {
       if(arr[j] > arr[j+1])  
       {
         swap(arr[j], arr[j+1]);
       }
     }
-	}
+  }
 }
 ```
 
@@ -36,7 +37,8 @@ void BubbleSortOptimized(int arr[], int n)
 
   for(int i = 0; i < n-1; i++)
   {
-    for(int j = i+1; j < n - 1; j++)
+    // Last i Elements are already in place
+    for(int j = 0; j < n - i - 1; j++)
     {
       if(arr[j] > arr[j+1])  
       {
@@ -45,6 +47,7 @@ void BubbleSortOptimized(int arr[], int n)
       }
     }
 
+    // if no two elements were swapped by inner loop, then break
     if(bSwaped == false)
       break;
   }
