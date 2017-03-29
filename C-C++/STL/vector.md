@@ -11,8 +11,7 @@
 
 ## Element Access
 - std::vector::operator[]
-- iterator
-- iterator를 통한 access가 속도면에서 유리
+- iterator : iterator를 통한 access가 속도면에서 유리
 
 ## vector iterators
 - random-access iteratos
@@ -44,4 +43,4 @@ int main ()
 ```
 
 ## Reference
-* [geeksforgeeks](http://www.cplusplus.com/reference/vector/)
+* [cplusplus](http://www.cplusplus.com/reference/vector/)
