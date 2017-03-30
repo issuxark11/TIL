@@ -12,6 +12,13 @@
 ## Element Access
 - std::vector::operator[]
 - iterator : iterator를 통한 access가 속도면에서 유리
+- front() : Access first element
+- back() : Access last element
+
+## Modifiers
+- push_back() : Add element at the end
+- pop_back()  : Delete last Element
+- erase() : erase elements
 
 ## vector iterators
 - random-access iteratos
