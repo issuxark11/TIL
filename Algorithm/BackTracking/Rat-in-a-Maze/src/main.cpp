@@ -3,70 +3,43 @@ the directions mouse will take to reach the destination.
 You are required to complete the below method. */
 //#include <vector>
 
-bool IsSafe(int maze[MAX][MAX], int n, int x, int y)
+bool IsValid(int maze[MAX][MAX], vector<vector<bool>>& visited, int x, int y, int n)
 {
     bool bReturn = false;
     
-    if(x >= 0 && x < n && y >= 0 && y < n && maze[x][y] == 1)
+    if(x >= 0 && x < n && y >= 0 && y < n && maze[x][y] == 1 && visited[x][y] == false)
         bReturn = true;
         
     return bReturn;
 }
 
-bool SolveMazeUtil(int maze[MAX][MAX], int n, int i, int j, vector<string>& sol)
+void SolveMazeUtil(int maze[MAX][MAX], vector<vector<bool>>& visited, vector<string>& result, int i, int j, int n, string str)
 {
-    bool bReturn = false;
-    
-    // Last position (n-1, n-1)
-    if(i == n-1 && j == n-1 )
+    if(IsValid(maze, visited, i, j, n))
     {
-        bReturn = true;    
-    }
-    
-    if(IsSafe(maze, n, i, j) == true)
-    {
-        // Move Down
-        if(SolveMazeUtil(maze, n, i+1, j, sol) == true)
-        {
-            cout << "D";
-            bReturn = true;
+        if(i==n-1 && j==n-1){
+            result.push_back(str);
+            return;
         }
         
-        // Move Right
-        if(SolveMazeUtil(maze, n, i, j + 1, sol) == true)
-        {
-            cout << "R";
-            bReturn = true;
-        }
-    }
-    
-    return bReturn;
-}
-
-void SolveMaze(int maze[MAX][MAX], int n, vector<string>& sol)
-{
-    vector<string> vecReturn;
-    
-    if(SolveMazeUtil(maze, n, 0, 0, vecReturn) == false)
-    {
-        cout << "Solution doesn't exist" << endl;
+        visited[i][j] = true;
+        SolveMazeUtil(maze, visited, result, i-1, j, n, str+"U");
+        SolveMazeUtil(maze, visited, result, i+1, j, n, str+"D");
+        SolveMazeUtil(maze, visited, result, i, j-1, n, str+"L");
+        SolveMazeUtil(maze, visited, result, i, j+1, n, str+"R");
+        visited[i][j] = false;
     }
 }
 
 vector<string> printPath(int m[MAX][MAX], int n)
 {
     //Your code here    
-    vector<string> sol;
+    vector<string> result;
+    string str="";
+    vector<vector<bool>> visited(n,vector<bool>(n,false));
     
-    SolveMaze(m, n, sol);
+    SolveMazeUtil(m, visited, result, 0, 0, n, str);
+    sort(result.begin(),result.end());
     
-    cout << endl;
-    for(int i = 0; i < n; i++)
-    {
-        for(int j = 0; j < n; j++)
-        {
-            cout << m[i][j] << " ";
-        }
-        cout << endl;
-    }
+    return result;
 }
