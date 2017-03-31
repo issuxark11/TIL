@@ -23,9 +23,9 @@
 ## vector iterators
 - random-access iteratos
 - pointer가 가리키는 offset position에 대한 element들에 접근하는 방법 제공
-```shell
-Example
 
+### Example
+```shell
 #include <iostream>
 #include <vector>
 
@@ -45,8 +45,41 @@ int main ()
 		cout << *it << endl;
 	}
 
+	
 }
 
+```
+
+## vector constructor
+
+### Example
+```shell
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main ()
+{
+	// 1. default constructor;
+	vector<int> first; 
+
+	// 2. 100 인 element 4개 보관 
+	vector<int> second(4, 100);
+
+	// 3. second의 처음에서 끝으로 생성 
+	vector<int> third(second.begin(), second.begin());
+
+	// 4. third 복사해서 생성  
+	vector<int> fourth(third);
+
+	// 5. 배열을 통해 생성
+	int arrInt[] = {16, 2, 77, 29};
+	vector<int> fifth (arrInt, arrInt + sizeof(arrInt) / sizeof(Int)); 
+
+	// 6. 2-dimension
+	vector<vector<bool>> result(5, vector<bool>(5, false));
+}
 ```
 
 ## Reference
