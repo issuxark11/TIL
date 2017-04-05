@@ -9,7 +9,7 @@
 ```shell
 #include <iostream>     // std::cout
 #include <algorithm>    // std::sort
-#include <vector>       // std::vector
+#include <vector>         // std::vector
 
 using namespace std;
 
