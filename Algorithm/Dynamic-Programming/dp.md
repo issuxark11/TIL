@@ -1,16 +1,15 @@
-# Algorithm - Dynamic Programming Introduction
+# Algorithm - Dynamic Programming(동적 계획법)
 
 ## Introduction
-- Use when sub-problems are evaluated many times
-- Solving complex problem by breaking it into subproblems and stores the results of subproblems to avoid computing the same results again.
-- 중복되는 함수 호출을 줄임 
-- 점화식, BackTracking 알고리즘 사용시 불필요한 중복 계산을 줄일 수 있음 -> 최적화 가능
-- Base Condition이 중요!
+- 문제를 여러개의 sub-problem 들로 나누어 해결. (divide-and-conquer 와 같은 접근 방식)
+- Use when sub-problems are evaluated many times. (divide-and-conquer 와 차이점)
+- Solving complex problem by breaking it into subproblems and stores the results of subproblems to avoid computing the same results again. (sub-problem 의 계산 결과를 저장해두고 재활용)
+- baseline 이 여러번 중복되는 경우 반복되는 부분 문제들의 답을 저장해두어 최적화를 위해 사용 (속도 향상)
 
 ## Properties
-### 1. Overapping Subproblems
-- results of subproblems are stored in a table
-- reuse sotred value instead of computing subproblems again
+### 1. Overapping Subproblems (중복되는 부분 문제)
+- results of subproblems are stored in a table (각 문제의 답을 저장)
+- reuse sotred value instead of computing subproblems again (재활용)
 - Two ways to store the results
 ```shell
   a) Top Down (Memoization)
@@ -73,5 +72,10 @@ int fibbo(int n)
 - dp : 모든 상황을 고려. 시간상 오래걸림
 - greedy : 항상 최적해를 보장하지 않음. 시간적 효율성
 
+## BackTracking
+- 점화식, 백트래킹과 연관
+- 점화식, 백트래킹 알고리즘 사용시 불필요한 중복 계산, 함수호출을 줄일 수 있음 -> 최적화 가능
+
 ## Reference
 * [geeksforgeeks](http://www.geeksforgeeks.org/fundamentals-of-algorithms/)
+* 알고리즘 문제 해결 전략 (구종만) / 인사이트
