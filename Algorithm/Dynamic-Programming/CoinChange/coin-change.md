@@ -1,7 +1,7 @@
 # Algorithm - Dynamic Programming (Coin Change)
 
 ## Coin Change
-* Given a value N, if we want to make change for N cents, and we have infinite supply of m valued coins, how many ways we make the change?
+- Given a value N, if we want to make change for N cents, and we have infinite supply of m valued coins, how many ways we make the change?
 ```shell
 # Solution
 1. Optimal Substructure
@@ -12,10 +12,11 @@
 2. Overlapping Subproblems
     - recursive implementation
 
-# Time Complexity
+# Time Complexity : O(mn)
 ```
+
+### Example
 ```shell
-# Example
 Given the list of coins of distinct denominations and total amount of money. Output the minimum number of coins required to make up that amount.
 
 # Input
@@ -28,5 +29,6 @@ int arr[N] : values of coins
 Print minimum number of coins required to make up that amount
 Return -1 if it is impossible to make the amount using given coins
 ```
+
 ## Reference
 * [geeksforgeeks](http://www.geeksforgeeks.org/dynamic-programming-set-7-coin-change/)
