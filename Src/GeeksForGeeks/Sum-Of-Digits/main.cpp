@@ -9,10 +9,9 @@ int GetSumOfDigits(int & n) {
     
     while(n > 0) {
         
-        if(n % 2 == 1)
-            iSumOfDigit++;
+        iSumOfDigit += n % 10;
         
-        n = n/2;
+        n = (n - (n%10)) / 10;
         
     }
     
