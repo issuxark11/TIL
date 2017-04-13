@@ -6,9 +6,18 @@
 - Also given an integer W which represents knapsack capacity, find out the maximum value subset of val[] such that sum of the weights of this subset is smaller than or equal to W. 
 - You cannot break an item, either pick the complete item, or don’t pick it (0-1 property).
 
+### Input
+- W : capacity of Knapsack
+- N : number of items
+- val[] : values of N-items
+- wt[]  : weights of N-items
+
+### Output
+- Maximum value that can be put in a knapsack of capacity W
+
+### Solution
 ```shell
-# Solution
-1. Optimal Substructure:
+1. Optimal Substructure: recursive implementation that simply follows the recursive structure mentioned below.
 To consider all subsets of items, there can be two cases for every item: 
 (1) the item is included in the optimal subset 
 (2) not included in the optimal set.
@@ -20,9 +29,8 @@ Therefore, the maximum value that can be obtained from n items is max of followi
 If weight of nth item is greater than W, then the nth item cannot be included and case 1 is the only possibility.
 
 2. Overlapping Subproblems
-Following is recursive implementation that simply follows the recursive structure mentioned above.
-
+Since Suproblems are evaluated again, this problem has Overlapping Subprolems property.
 ```
 
 ## Reference
-* [geeksforgeeks](http://www.geeksforgeeks.org/dynamic-programming-set-3-longest-increasing-subsequence/)
+* [geeksforgeeks](http://www.geeksforgeeks.org/dynamic-programming-set-10-0-1-knapsack-problem/)
