@@ -29,6 +29,53 @@ struct ListNode
 - Random access is not allowed. We have to access elements sequentially starting from the first node. So we cannot do binary search with linked lists.
 - Extra memory space for a pointer is required with each element of the list.
 
+## Operations
+
+### Insert
+```shell
+Node* insert(Node *head,int data)
+{
+    //Complete this method
+    Node * tmpNode = head;
+    Node * newNode = new Node(data);
+    newNode->next = NULL;
+         
+    if(head == NULL) {
+        head = newNode;
+    } else {
+        while(tmpNode->next != NULL) {
+            tmpNode = tmpNode->next;
+        }
+        newNode->next = tmpNode->next;
+        tmpNode->next = newNode;
+    }
+          
+    return head;
+}
+
+```
+
+## Implementation
+```shell
+class Node {
+public:    
+    int data;
+    Node *next;
+    Node(int d) {
+        data = d;
+        next = NULL;
+    }
+}
+
+class LinkedList {
+public:
+    // Operations
+    Node* insert(Node* head, int data);
+    
+}
+```
+
 ## Reference
 * [geeksforgeeks](http://www.courses.geeksforgeeks.org/course/3/2/1/)
+* [hackerrank](https://www.hackerrank.com/challenges/30-linked-list/tutorial)
 * 알고리즘 문제 해결 전략 (구종만) / 인사이트
