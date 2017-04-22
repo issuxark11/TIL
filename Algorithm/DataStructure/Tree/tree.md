@@ -1,7 +1,4 @@
 # Data Structure - Tree
-## Reference
-* 열혈강의 자료구조 / 윤성우 저
-* 알고리즘 문제해결 전략 / 구종만 저
 
 ## 트리
 - 계층적 구조를 갖는 자료들을 표현하기 위한 자료 구조
@@ -24,3 +21,6 @@ struct TreeNode
     vector<TreeNode*> children; // 자손노드들을 가리키는 포인터 배열
 }
 ```
+## Reference
+* 열혈강의 자료구조 / 윤성우 저
+* 알고리즘 문제해결 전략 / 구종만 저

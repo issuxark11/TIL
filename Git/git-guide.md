@@ -47,12 +47,20 @@
 - # git log
 - # git log -p <file name> : commit에서 변경된 내용 함께 확인
 
-### rebase
+### git rebase
 - 가리고 싶은 commit을 'fixup'으로 고치고 저장
 - 이미 push 한 commit 은 건들지 않는다. 주의해서 사용 (branch 생김...)
 - # git rebase -i HEAD~2
 
-## Commit message
+### git stash
+- 스테이지 영역에 아직 commit 하지 않은 변경사항이 있는 경우 git rebase나 git pull 수행시 실패 
+- 아직 commit 하지 않은 변경사항을 백업하고 워킹디렉토리를 HEAD 상태로 돌림
+- # git stash
+- # git stash save
+- # git stash list // stash 로 저장한 내역 조회
+- # git stash pop // stash에 저장한 내용을 다시 적용
+- # git stash clear // 전체 stash list 삭제
+## Commit message Example
 ```shell
 커밋 내용 한 줄 요약
 공백 한줄 
@@ -63,3 +71,6 @@
 [Verified] 검증을 어떻게 했는지
 [Build] 빌드 여부
 ```
+
+## Reference
+* [git-documentation](https://git-scm.com/docs)
