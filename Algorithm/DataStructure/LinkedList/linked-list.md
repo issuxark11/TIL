@@ -17,7 +17,7 @@
 struct ListNode 
 {
     int element; 
-    ListNode *prev, *next;
+    ListNode *prev, *next; // doubly linked list
 }
 ```
 
@@ -29,6 +29,7 @@ struct ListNode
 - Random access is not allowed. We have to access elements sequentially starting from the first node. So we cannot do binary search with linked lists.
 - Extra memory space for a pointer is required with each element of the list.
 
+<<<<<<< Updated upstream
 ## Operations
 
 ### Insert
@@ -74,6 +75,8 @@ public:
     
 }
 ```
+=======
+>>>>>>> Stashed changes
 
 ## Reference
 * [geeksforgeeks](http://www.courses.geeksforgeeks.org/course/3/2/1/)
