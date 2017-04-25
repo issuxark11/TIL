@@ -31,7 +31,7 @@
 class CSingleton
 {
 public:
-	static CSingleton * Instance();
+	static CSingleton * GetInstance();
 
 protected:
 	CSingleton() {}
@@ -50,6 +50,20 @@ CSingleton * CSingleton::Instance()
 
 	return m_instance;
 }
+
+```
+
+## Delete Singleton Pointer
+```shell
+~Singleton()
+    { 
+        //delete m_pInstance; // The system goes in infinate loop here if i uncomment this  
+        m_pInstance = NULL;
+    }
+```
+- You call the destructor, but the destructor also calls the destructor, so the destructor calls the destructor again... and again...
+- If you want to use delete, you must use it from outside of the destructor and NOT call it again in the destructor.
+
 
 ```
 
